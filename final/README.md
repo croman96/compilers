@@ -75,3 +75,17 @@ simple-expression -> Minus simple-expression
 | expression | Identifier, Print, If, Then, RightParenthesis, End, $ |
 | expression-prime | Identifier, Print, If, Then, RightParenthesis, End, $ |
 | simple-expression | Identifier, Print, If, Then, RightParenthesis, End, Operator, $ |
+
+### Instrucciones
+
+Requerimientos:
+
+> python3
+
+Ejecución:
+
+> cd /your/work/directory/final
+>
+> python3 final.py
+>
+> introducir path al archivo a evaluar.

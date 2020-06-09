@@ -31,3 +31,17 @@ Execution:
 > python3 lexer.py
 >
 > you'll be prompted for absolute or relative path to test file.
+
+### Final
+
+Requirements:
+
+> python3
+
+Execution:
+
+> cd /your/work/directory/final
+>
+> python3 final.py
+>
+> you'll be prompted for absolute or relative path to test file.
