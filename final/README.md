@@ -1,6 +1,7 @@
 # Producciones
 
 | id | production |
+|---|---|
 | 1 | program -> declaration-star statement-star |
 | 2 | declaration-star -> declaration declaration-star |
 | 3 | declaration-star -> '' |
@@ -27,6 +28,7 @@
 # Tabla
 
 | simbol/terminal |	Identifier | Int | Bool | Equals | Print | If | Then | End | Operator | Integer | Boolean | LParen | RParen | Minus | $ |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | program | 1 | 1 | 1 | | 1 | 1 | | | | | | | |	| 1 |
 | declaration-star | 3 | 2 | 2 | | 3 | 3 | | | | | | | | | 3 |
 | declaration | | 4 | 4 | | | | | | | | | | |	| 6 |
