@@ -18,10 +18,10 @@ statement -> condition
 type -> Int
 type -> Bool
 
-operator → &
-operator → <
-operator → +
-operator → *
+operator -> &
+operator -> <
+operator -> +
+operator -> *
 
 assignment -> Identifier Equals expression
 
