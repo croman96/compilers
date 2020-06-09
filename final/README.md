@@ -18,6 +18,11 @@ statement -> condition
 type -> Int
 type -> Bool
 
+operator → &
+operator → <
+operator → +
+operator → *
+
 assignment -> Identifier Equals expression
 
 print -> Print expression
@@ -25,7 +30,7 @@ print -> Print expression
 condition -> If expression Then statement-star End
 
 expression -> simple-expression expression-prime
-expression-prime -> Operator simple-expression expression-prime
+expression-prime -> operator simple-expression expression-prime
 expression-prime -> ''
 
 simple-expression -> Identifier
@@ -45,11 +50,12 @@ simple-expression -> Minus simple-expression
 | statement-star |	Identifier, Print, If, ε |
 | statement |	Identifier, Print, If |
 | type |	Int, Bool |
+| operator | &, <, +, * |
 | assignment |	Identifier |
 | print |	Print |
 | condition |	If |
 | expression |	Identifier, Integer, Boolean, LeftParenthesis, Minus |
-| expression-prime |	Operator, ε |
+| expression-prime |	operator, ε |
 | simple-expression |	Identifier, Integer, Boolean, LeftParenthesis, Minus |
 
 # Conjunto Follow
@@ -62,6 +68,7 @@ simple-expression -> Minus simple-expression
 | statement-star | End, $ |
 | statement | Identifier, Print, If, End, $ |
 | type | Identifier |
+| operator | Identifier |
 | assignment | Identifier, Print, If, End, $ |
 | print | Identifier, Print, If, End, $ |
 | condition | Identifier, Print, If, End, $ |
